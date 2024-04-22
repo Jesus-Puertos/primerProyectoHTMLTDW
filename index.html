@@ -25,23 +25,23 @@
       </nav>
     </div>
 
-    <section>
-      <div>
+    <section class="hero">
+      <div class="contenido-hero">
         <h2>Los mejores cursos de todo el mundo</h2>
         <div>
           <p>Contamos con los mejores instructores de todo el mundo</p>
         </div>
-        <a href="#">Incribirse</a>
+        <a href="#" class="boton">Incribirse</a>
       </div>
       <!-- fin de nuestro contenido hero -->
     </section>
 
-    <main>
+    <main class="contenedor">
       <h2>Nuestros cursos</h2>
-      <div>
-        <section>
-          <h3>Desarrollo web</h3>
-          <div>
+      <div class="servicios">
+        <section class="servicio">
+          <h3>desarrollo web</h3>
+          <div class="icono">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-html5"
@@ -65,9 +65,9 @@
             provident accusamus, commodi eligendi dolore eveniet.
           </p>
         </section>
-        <section>
+        <section class="servicio">
           <h3>Negocios</h3>
-          <div>
+          <div class="icono">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-ad"
@@ -95,9 +95,9 @@
             provident accusamus, commodi eligendi dolore eveniet.
           </p>
         </section>
-        <section>
+        <section class="servicio">
           <h3>Contabilidad</h3>
-          <div>
+          <div class="icono">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-coin"
@@ -128,24 +128,41 @@
       <!-- FIN DE CURSOS -->
       <section>
         <h2>Contacto</h2>
-        <form action="">
+        <form action="" class="formulario">
           <fieldset>
             <legend>Contactanos llenando todos los campos</legend>
-            <div>
-              <label for="">Nombre</label>
-              <input type="text" />
+            <div class="contenedor-campo">
+              <div class="campo">
+                <label for="">Nombre</label>
+                <input type="text" class="input-text" placeholder="Ej. Jesus" />
+              </div>
+              <div class="campo">
+                <label for="">Telefono</label>
+                <input type="tel" class="input-text" placeholder="222 00 00" />
+              </div>
+              <div class="campo">
+                <label for="">Correo</label>
+                <input
+                  type="email"
+                  class="input-text"
+                  placeholder="correo@gmail.com"
+                />
+              </div>
+              <div class="campo">
+                <label for="">Mensaje</label>
+                <textarea
+                  placeholder="Escribe tu mensaje..."
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="input-text"
+                ></textarea>
+              </div>
             </div>
+            <!-- Finaliza.contenedor-campos -->
             <div>
-              <label for="">Telefono</label>
-              <input type="tel" />
-            </div>
-            <div>
-              <label for="">Correo</label>
-              <input type="email" />
-            </div>
-            <div>
-              <label for="">Mensaje</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <input type="submit" value="Enviar" class="boton" />
             </div>
           </fieldset>
         </form>
